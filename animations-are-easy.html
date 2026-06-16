@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnimationsAreEasy — Кейс</title>
+  <title data-i18n="casePages.animations.pageTitle">AnimationsAreEasy — Кейс</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="case-study.css">
@@ -17,7 +17,7 @@
 <body>
   <nav class="nav" id="nav">
     <div class="nav-inner container" style="max-width: 1200px;">
-      <a href="index.html" class="nav-logo">Айк</a>
+      <a href="index.html" class="nav-logo" data-i18n="nav.logo">Айк</a>
       <div class="nav-links"></div>
       <button class="lang-toggle" id="lang-toggle">EN</button>
     </div>
@@ -25,15 +25,15 @@
 
   <div class="container" style="padding-top: 100px;">
     <nav class="case-nav reveal">
-      <a href="index.html" class="back-link">← Назад на главную</a>
+      <a href="index.html" class="back-link" data-i18n="casePages.animations.backLink">← Назад на главную</a>
     </nav>
 
     <header class="case-header reveal">
-      <h1>AnimationsAreEasy</h1>
-      <p class="case-subtitle">Коллекция из 14 CSS-микроанимаций — без JavaScript</p>
+      <h1 data-i18n="casePages.animations.title">AnimationsAreEasy</h1>
+      <p class="case-subtitle" data-i18n="casePages.animations.subtitle">Коллекция из 14 CSS-микроанимаций — без JavaScript</p>
       <div class="case-meta">
-        <span>2025</span>
-        <span>Pet-проект</span>
+        <span data-i18n="casePages.animations.metaYear">2025</span>
+        <span data-i18n="casePages.animations.metaRole">Pet-проект</span>
       </div>
     </header>
 
@@ -41,11 +41,11 @@
 
       <!-- Situation -->
       <section id="situation" class="reveal">
-        <h2>Ситуация</h2>
-        <p>
+        <h2 data-i18n="casePages.animations.situationTitle">Ситуация</h2>
+        <p data-i18n="casePages.animations.situationBody0">
           В работе над разными проектами разработчики постоянно говорили, что им нужны Lottie JSON-анимации даже для простейших вещей: hover-эффект на кнопке, спиннер загрузки, плавное появление блока. Я смотрел на эти задачи и не понимал — зачем тащить тяжёлый Lottie-плеер и внешние файлы ради того, что можно сделать на чистом CSS?
         </p>
-        <p>
+        <p data-i18n="casePages.animations.situationBody1">
           В какой-то момент я решил проверить: а насколько далеко можно зайти на одном CSS? Без библиотек, без JS-анимаций, без Lottie. Взял и собрал 14 микроанимаций — от спиннера до 3D-карточки. Результат меня убедил: если анимация не сложная, CSS справляется на ура. Никакие Lottie не нужны.
         </p>
       </section>
@@ -78,15 +78,15 @@
 
       <!-- Task -->
       <section id="task" class="reveal">
-        <h2>Задача</h2>
-        <p>
+        <h2 data-i18n="casePages.animations.taskTitle">Задача</h2>
+        <p data-i18n="casePages.animations.taskIntro">
           Разработать библиотеку CSS-микроанимаций, которая:
         </p>
         <ul>
-          <li>Работает без JavaScript — только CSS transitions, transforms и keyframes.</li>
-          <li>Содержит разнообразные эффекты: от skeleton-загрузки до 3D-карточек и спиралей.</li>
-          <li>Совместима с любым стеком — React, Vue, Angular или просто HTML.</li>
-          <li>Сопровождается демо-страницей для быстрого просмотра и выбора.</li>
+          <li data-i18n="casePages.animations.taskList0">Работает без JavaScript — только CSS transitions, transforms и keyframes.</li>
+          <li data-i18n="casePages.animations.taskList1">Содержит разнообразные эффекты: от skeleton-загрузки до 3D-карточек и спиралей.</li>
+          <li data-i18n="casePages.animations.taskList2">Совместима с любым стеком — React, Vue, Angular или просто HTML.</li>
+          <li data-i18n="casePages.animations.taskList3">Сопровождается демо-страницей для быстрого просмотра и выбора.</li>
         </ul>
       </section>
 
@@ -125,14 +125,14 @@
 
       <!-- Action -->
       <section id="action" class="reveal">
-        <h2>Действия</h2>
+        <h2 data-i18n="casePages.animations.actionTitle">Действия</h2>
 
         <div class="process-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h3>Исследование и отбор эффектов</h3>
-              <p>
+              <h3 data-i18n="casePages.animations.action0Title">Исследование и отбор эффектов</h3>
+              <p data-i18n="casePages.animations.action0Desc">
                 Я проанализировал, какие микроанимации чаще всего встречаются в современных интерфейсах, и отобрал 14 эффектов, покрывающих основные потребности:
               </p>
               <ul>
@@ -148,8 +148,8 @@
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3>Разработка анимаций</h3>
-              <p>
+              <h3 data-i18n="casePages.animations.action1Title">Разработка анимаций</h3>
+              <p data-i18n="casePages.animations.action1Desc">
                 Каждая анимация реализована исключительно средствами CSS:
               </p>
               <ul>
@@ -164,11 +164,11 @@
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Демо-страница и деплой</h3>
-              <p>
+              <h3 data-i18n="casePages.animations.action2Title">Демо-страница и деплой</h3>
+              <p data-i18n="casePages.animations.action2Desc0">
                 Создал демо-страницу с сеткой превью, где каждая анимация запускается по ховеру или фокусу. На мобильных устройствах (где нет hover) используется IntersectionObserver — анимация срабатывает при появлении в области видимости.
               </p>
-              <p>
+              <p data-i18n="casePages.animations.action2Desc1">
                 Страница опубликована на GitHub Pages, иконки — Phosphor (MIT). Репозиторий открыт для использования и форков.
               </p>
             </div>
@@ -179,7 +179,7 @@
 
       <!-- Result -->
       <section id="result" class="reveal">
-        <h2>Результат</h2>
+        <h2 data-i18n="casePages.animations.resultTitle">Результат</h2>
 
         <ul>
           <li><strong>14 анимаций</strong> — от skeleton-загрузки до 3D-карточек и спиралей.</li>
@@ -190,7 +190,7 @@
 
         <div class="impact-badge">
           <div class="impact-badge-value">14</div>
-          <div class="impact-badge-label">готовых CSS-анимаций</div>
+          <div class="impact-badge-label" data-i18n="casePages.animations.resultImpactLabel">готовых CSS-анимаций</div>
         </div>
 
         <div class="case-testimonial">
@@ -235,8 +235,8 @@
       Icons by <a href="https://phosphoricons.com" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">Phosphor</a> under MIT license.
     </p>
     <div class="case-navigation">
-      <a href="riseup.html" class="prev-case">← RiseUP</a>
-      <a href="index.html" class="next-case">Назад на главную →</a>
+      <a href="riseup.html" class="prev-case" data-i18n="casePages.animations.navPrev">← RiseUP</a>
+      <a href="index.html" class="next-case" data-i18n="casePages.animations.navNext">Назад на главную →</a>
     </div>
   </div>
 
