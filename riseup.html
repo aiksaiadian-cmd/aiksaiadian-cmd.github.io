@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiseUP — Кейс</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner container" style="max-width: 1200px;">
+      <a href="index.html" class="nav-logo">Айк</a>
+      <div class="nav-links">
+      </div>
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 100px;">
+    <nav class="case-nav reveal">
+      <a href="index.html" class="back-link">← Назад на главную</a>
+    </nav>
+
+    <header class="case-header reveal">
+      <h1>RiseUP</h1>
+      <p class="case-subtitle">Система обучения и развития персонала</p>
+      <div class="case-meta">
+        <span>2023-2024</span>
+        <span>Lead UI/UX Designer</span>
+      </div>
+    </header>
+
+    <main class="case-content">
+      <!-- Контекст -->
+      <section id="context" class="reveal">
+        <h2>Контекст</h2>
+        <p>
+          Так как проект внутренний, я вживую общался с реальными пользователями. Не было необходимости даже организовать отдельные встречи — общение происходило на кофепоинте, в коридорах, за рабочим местом.
+        </p>
+        <p>
+          Так собрал список критичных замечаний, которые приходили сразу на ум пользователям. Но предположительно были и неудобства, о которых не вспомнили или привыкли, не думая, что можно получше. Поэтому просил в следующий раз при взаимодействии с инструментом звать меня, чтобы я наблюдал, как они выполняют свои обычные задачи, комментируя вслух.
+        </p>
+        <p>
+          Основными представителями пользователей стали <strong>Никита</strong> — администратор системы и <strong>Дима</strong> — принимающий экзамены.
+        </p>
+      </section>
+
+      <!-- Что я услышал и увидел -->
+      <section id="problems" class="reveal">
+        <h2>Что я услышал и увидел</h2>
+        <p>У Никиты уже был список предполагаемых улучшений, которые бы он хотел увидеть:</p>
+        <ul>
+          <li>Возможность во время записи на экзамен выбора технологии, языка программирования для сдачи.</li>
+          <li>Возможность добавлять и удалять из платформы принимающих экзамены.</li>
+          <li>Переработка флоу назначения принимающих.</li>
+        </ul>
+
+        <p>У Димы были замечания к интерфейсу принимающего:</p>
+        <ul>
+          <li>Интерфейс не персонализирован под роль.</li>
+          <li>Флоу выбора времени и места проведения экзамена неудобен.</li>
+        </ul>
+
+        <p>А вот что я заметил во время наблюдений:</p>
+        <ul>
+          <li>Непроработанная структура платформы.</li>
+          <li>Неясный интерфейсный текст (даже опытные пользователи не были уверены в используемой на экране терминологии).</li>
+          <li>Лишние вынужденные шаги, страницы, смысл которых не смог подсказать ни один пользователь.</li>
+          <li>Изолированную от контекста статистику, которая могла бы быть очень полезна в нужном контексте.</li>
+        </ul>
+      </section>
+
+      <!-- Визуализация -->
+      <section id="visuals" class="reveal">
+        <h2>Визуализация</h2>
+
+        <div class="visual-frame visual-riseup">
+          <div class="shot-block fullwidth">
+            <img class="shot-img" src="img/editing_list_img.png" alt="Редактирование списка принимающих">
+            <div class="shot-copy">
+              <h3>Редактирование списка принимающих</h3>
+              <p>Раньше администраторам приходилось добавлять принимающих через код, что занимало много времени. Теперь можно добавить принимающего прямо в интерфейсе — выбираешь из списка недавних техлидов.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-frame visual-riseup">
+          <div class="shot-block-row">
+            <div class="shot-block" style="grid-template-columns:1fr;">
+              <img class="shot-img short" src="img/exam_img_0.png" alt="Назначение принимающего">
+              <div class="shot-copy">
+                <h3>Назначение принимающего</h3>
+                <p>При выборе принимающего сразу видно, насколько он занят и сколько экзаменов уже принял по нужной компетенции.</p>
+              </div>
+            </div>
+            <div class="shot-block" style="grid-template-columns:1fr;">
+              <img class="shot-img" src="img/details_img_0.png" alt="Бронирование места">
+              <div class="shot-copy">
+                <h3>Бронирование места</h3>
+                <p>Принимающие жаловались, что место и время выбираются в одном меню — это было неудобно. Разделили на два отдельных меню.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-frame visual-riseup">
+          <div class="shot-block fullwidth">
+            <img class="shot-img" src="img/login_gif.gif" alt="Вход в систему">
+            <div class="shot-copy">
+              <h3>Вход в систему</h3>
+              <p>Самые популярные способы входа (по телефону и через Яндекс ID) вынесены на главный экран, остальные спрятаны под кнопкой «?».</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Процесс -->
+      <section id="process" class="reveal">
+        <h2>Процесс</h2>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Исследование</h3>
+              <p>Провел серию интервью и сессий наблюдения с тремя группами пользователей: техлидами (экзаменаторами), администраторами и сотрудниками. Главные инсайты из бесед:</p>
+              <ul>
+                <li>Техлиды используют только 10% интерфейса — страницу «Мои экзамены», остальное создает шум.</li>
+                <li>Администраторы тратят много времени на рутинные действия, например, добавление принимающих через код.</li>
+                <li>Экран входа перегружен, что вызывает ступор у новых пользователей.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Гипотезы</h3>
+              <p>Основываясь на этих наблюдениях, я сформулировал несколько гипотез:</p>
+              <ul>
+                <li>Если персонализировать интерфейс под конкретную роль, пользователи перестанут тратить время на фильтрацию лишней информации.</li>
+                <li>Если заменить программирование на выбор из списка, администраторы будут выполнять задачу быстрее и с меньшим количеством ошибок.</li>
+                <li>Если разделить сложные действия на последовательные шаги, количество путаницы снизится.</li>
+                <li>Если убрать редко используемые способы входа с главного экрана, процесс входа станет интуитивным.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Проектирование и тестирование</h3>
+              <p>На основе гипотез я спроектировал новую структуру и провел юзабилити-тестирование прототипов на тех же пользователях. Ключевые изменения:</p>
+              <ul>
+                <li><strong>Персонализация интерфейса под роль.</strong> Убрал лишние страницы из версии для принимающих.</li>
+                <li><strong>Замена программирования на выбор из списка.</strong> Вместо ввода кода администратор теперь выбирает фамилию принимающего из выпадающего списка недавних пользователей.</li>
+                <li><strong>Группировка по смыслу.</strong> Разделил выбор времени и места бронирования на два последовательных шага, чтобы не перегружать пользователя.</li>
+                <li><strong>Перенос статистики в контекст задачи.</strong> Убрал абстрактные цифры в отдельный блок, оставив только те данные, которые влияют на принятие решения.</li>
+                <li><strong>Упрощение входа.</strong> Оставил на главном экране только два самых популярных способа (телефон и Яндекс ID), остальные спрятал под кнопку «Другие способы».</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Мой вывод -->
+      <section id="conclusion" class="reveal">
+        <h2>Мой вывод</h2>
+        <p>
+          Живое общение с пользователем даёт глубину, которую не получить из аналитики. Когда ты видишь эмоции человека, слышишь его интонации, понимаешь, что для него действительно важно.
+        </p>
+      </section>
+    </main>
+
+    <footer class="case-footer">
+      <div class="footer-divider"></div>
+      <div class="case-navigation">
+        <a href="sberq.html" class="prev-case">← SberQ</a>
+        <a href="medreach.html" class="next-case">MedReach →</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/l10n.js"></script>
+  <script src="js/l10n-case-studies.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

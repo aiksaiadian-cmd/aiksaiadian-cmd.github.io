@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimationsAreEasy — Кейс</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner container" style="max-width: 1200px;">
+      <a href="index.html" class="nav-logo">Айк</a>
+      <div class="nav-links"></div>
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 100px;">
+    <nav class="case-nav reveal">
+      <a href="index.html" class="back-link">← Назад на главную</a>
+    </nav>
+
+    <header class="case-header reveal">
+      <h1>AnimationsAreEasy</h1>
+      <p class="case-subtitle">Коллекция из 14 CSS-микроанимаций — без JavaScript</p>
+      <div class="case-meta">
+        <span>2025</span>
+        <span>Pet-проект</span>
+      </div>
+    </header>
+
+    <main class="case-content">
+
+      <!-- Situation -->
+      <section id="situation" class="reveal">
+        <h2>Ситуация</h2>
+        <p>
+          В работе над разными проектами разработчики постоянно говорили, что им нужны Lottie JSON-анимации даже для простейших вещей: hover-эффект на кнопке, спиннер загрузки, плавное появление блока. Я смотрел на эти задачи и не понимал — зачем тащить тяжёлый Lottie-плеер и внешние файлы ради того, что можно сделать на чистом CSS?
+        </p>
+        <p>
+          В какой-то момент я решил проверить: а насколько далеко можно зайти на одном CSS? Без библиотек, без JS-анимаций, без Lottie. Взял и собрал 14 микроанимаций — от спиннера до 3D-карточки. Результат меня убедил: если анимация не сложная, CSS справляется на ура. Никакие Lottie не нужны.
+        </p>
+      </section>
+
+      <!-- 3-grid: Situation → Task -->
+      <div class="case-anim-embed case-anim-grid-3">
+        <div class="cell is-visible" data-animation="card-deck">
+          <div class="preview">
+            <div class="deck-card card-1"><i class="ph ph-squares-four"></i></div>
+            <div class="deck-card card-2"><i class="ph ph-diamond"></i></div>
+            <div class="deck-card card-3"><i class="ph ph-heart-straight"></i></div>
+            <div class="deck-card card-4"><i class="ph ph-spade"></i></div>
+          </div>
+          <figcaption>Card Deck</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="shake-nudge">
+          <div class="preview">
+            <div class="shake-box"><i class="ph ph-warning"></i></div>
+          </div>
+          <figcaption>Shake / Nudge</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="floating-bobbing">
+          <div class="preview">
+            <div class="float-object"><i class="ph ph-cloud"></i></div>
+            <div class="float-shadow"></div>
+          </div>
+          <figcaption>Floating / Bobbing</figcaption>
+        </div>
+      </div>
+
+      <!-- Task -->
+      <section id="task" class="reveal">
+        <h2>Задача</h2>
+        <p>
+          Разработать библиотеку CSS-микроанимаций, которая:
+        </p>
+        <ul>
+          <li>Работает без JavaScript — только CSS transitions, transforms и keyframes.</li>
+          <li>Содержит разнообразные эффекты: от skeleton-загрузки до 3D-карточек и спиралей.</li>
+          <li>Совместима с любым стеком — React, Vue, Angular или просто HTML.</li>
+          <li>Сопровождается демо-страницей для быстрого просмотра и выбора.</li>
+        </ul>
+      </section>
+
+      <!-- 3-grid: Task → Action -->
+      <div class="case-anim-embed case-anim-grid-3">
+        <div class="cell is-visible" data-animation="cursor-drag">
+          <div class="preview">
+            <div class="drag-card"><i class="ph ph-cube"></i></div>
+            <div class="cursor-pointer"><i class="ph ph-cursor"></i></div>
+            <div class="cursor-grab"><i class="ph ph-hand-grabbing"></i></div>
+          </div>
+          <figcaption>Cursor Drag</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="emoji-spiral">
+          <div class="preview">
+            <div class="spiral-track">
+              <span class="spiral-emoji emoji-1">🖱️</span>
+              <span class="spiral-emoji emoji-2">✨</span>
+              <span class="spiral-emoji emoji-3">😡</span>
+              <span class="spiral-emoji emoji-4">😊</span>
+              <span class="spiral-emoji emoji-5">😢</span>
+              <span class="spiral-emoji emoji-6">❤️</span>
+              <span class="spiral-emoji emoji-7">👀</span>
+              <span class="spiral-emoji emoji-8">⭐</span>
+            </div>
+          </div>
+          <figcaption>Emoji Spiral</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="glow-button">
+          <div class="preview">
+            <button class="glow-btn"><i class="ph ph-star"></i> Hover Me</button>
+          </div>
+          <figcaption>Glow / Pulse Button</figcaption>
+        </div>
+      </div>
+
+      <!-- Action -->
+      <section id="action" class="reveal">
+        <h2>Действия</h2>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Исследование и отбор эффектов</h3>
+              <p>
+                Я проанализировал, какие микроанимации чаще всего встречаются в современных интерфейсах, и отобрал 14 эффектов, покрывающих основные потребности:
+              </p>
+              <ul>
+                <li><strong>Обратная связь:</strong> Shake/Nudge, Glow/Pulse Button, Bounce/Elastic.</li>
+                <li><strong>Загрузка:</strong> Skeleton Shimmer, Loading Spinner, Pulse/Ripple.</li>
+                <li><strong>Навигация:</strong> Cursor Drag, Card Deck.</li>
+                <li><strong>Декоративные:</strong> Emoji Spiral, Floating/Bobbing, Gradient Flow, Swipe Reveal.</li>
+                <li><strong>Текст:</strong> Typing Effect.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Разработка анимаций</h3>
+              <p>
+                Каждая анимация реализована исключительно средствами CSS:
+              </p>
+              <ul>
+                <li><strong>@keyframes</strong> — для сложных последовательных анимаций (card deck, emoji spiral).</li>
+                <li><strong>transition</strong> — для плавных интерактивных состояний (glow button, card flip).</li>
+                <li><strong>transform</strong> — для производительных перемещений и поворотов (bounce, floating).</li>
+                <li><strong>GPU-композиция</strong> — только свойства opacity и transform для 60fps.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Демо-страница и деплой</h3>
+              <p>
+                Создал демо-страницу с сеткой превью, где каждая анимация запускается по ховеру или фокусу. На мобильных устройствах (где нет hover) используется IntersectionObserver — анимация срабатывает при появлении в области видимости.
+              </p>
+              <p>
+                Страница опубликована на GitHub Pages, иконки — Phosphor (MIT). Репозиторий открыт для использования и форков.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Result -->
+      <section id="result" class="reveal">
+        <h2>Результат</h2>
+
+        <ul>
+          <li><strong>14 анимаций</strong> — от skeleton-загрузки до 3D-карточек и спиралей.</li>
+          <li><strong>Zero JS-зависимостей</strong> — библиотека подключается одним CSS-файлом.</li>
+          <li><strong>Доступность</strong> — все анимации работают по hover, focus и (на мобильных) через IntersectionObserver.</li>
+          <li><strong>MIT-лицензия</strong> — можно использовать в коммерческих проектах.</li>
+        </ul>
+
+        <div class="impact-badge">
+          <div class="impact-badge-value">14</div>
+          <div class="impact-badge-label">готовых CSS-анимаций</div>
+        </div>
+
+        <div class="case-testimonial">
+          <blockquote>
+            <p>
+              Ссылки: <a href="https://github.com/aiksaiadian-cmd/AnimationsAreEasy" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">GitHub</a>
+              · <a href="https://aiksaiadian-cmd.github.io/AnimationsAreEasy/" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">Live Demo</a>
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- 3-grid: Action → Result -->
+      <div class="case-anim-embed case-anim-grid-3">
+        <div class="cell is-visible" data-animation="skeleton-shimmer">
+          <div class="preview">
+            <div class="skeleton-avatar"></div>
+            <div class="skeleton-line line-1"></div>
+            <div class="skeleton-line line-2"></div>
+            <div class="skeleton-line line-3"></div>
+          </div>
+          <figcaption>Skeleton Shimmer</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="bounce-elastic">
+          <div class="preview">
+            <div class="bounce-ball"><i class="ph ph-circle"></i></div>
+          </div>
+          <figcaption>Bounce / Elastic</figcaption>
+        </div>
+        <div class="cell is-visible" data-animation="loading-spinner">
+          <div class="preview">
+            <div class="spinner-ring"></div>
+            <i class="ph ph-circle-notch"></i>
+          </div>
+          <figcaption>Loading Spinner</figcaption>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="case-footer">
+      <div class="footer-divider"></div>
+      <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px;">
+        Icons by <a href="https://phosphoricons.com" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">Phosphor</a> under MIT license.
+      </p>
+      <div class="case-navigation">
+        <a href="riseup.html" class="prev-case">← RiseUP</a>
+        <a href="index.html" class="next-case">Назад на главную →</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/l10n.js"></script>
+  <script src="js/l10n-case-studies.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

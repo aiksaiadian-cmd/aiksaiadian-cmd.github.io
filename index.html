@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="hero.title">Продуктовый дизайнер</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo" data-i18n="nav.logo">Айк</a>
+      <div class="nav-links">
+        <a href="#experience" data-i18n="nav.experience">Опыт</a>
+        <a href="#projects" data-i18n="nav.projects">Проекты</a>
+        <a href="#experiments" data-i18n="nav.gallery">Концепты</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      </div>
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="bento-grid bento-grid-2">
+        <!-- Cell 1 — Main text (large) -->
+        <div class="bento-item bento-item-large bento-item-hero">
+          <h1 data-i18n="hero.title">Продуктовый дизайнер</h1>
+          <p class="subtitle" data-i18n="hero.subtitle" style="margin-top: 20px; max-width: 520px;">
+            Меня зовут Айк. Специализируюсь на B2B/B2E-решениях и системах со сложной логикой.
+          </p>
+          <a href="about.html" class="hero-about-btn" data-i18n="hero.aboutBtn">Подробнее обо мне →</a>
+        </div>
+
+        <!-- Cell 2 — Avatar (spans full height) -->
+        <div class="bento-item bento-item-avatar">
+          <img src="img/Avatar/Avatar.jpg" alt="Aik" class="avatar-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="section reveal" id="experience">
+    <div class="container" style="max-width: var(--content-width);">
+      <div class="section-header">
+        <h2 data-i18n="experience.title">Опыт</h2>
+      </div>
+      <p data-i18n="experience.description" style="font-size: 1.15rem; color: var(--color-text); margin-bottom: 24px;">
+        Проектирую интерфейсы — от простых сервисов до сложных систем. Работал с product-командами над B2B/B2E-решениями, строил дизайн-системы и принимал решения на основе данных.
+      </p>
+      <p data-i18n="experience.approach_desc" style="color: var(--color-text-secondary);">
+        Начинаю с исследования и гипотез, проектирую решения, тестирую на пользователях и итерирую. Убеждён, что хороший дизайн — это не только эстетика, но и измеримый результат.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section reveal" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="projects.title">Мои проекты</h2>
+      </div>
+
+      <div class="projects-grid stagger-children">
+        <!-- RiseUP -->
+        <div class="project-card">
+          <a href="riseup.html" class="case-link">
+            <div class="project-card-image">
+              <img src="img/Projects/Case_RiseUP_upd.png" alt="RiseUP" loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 data-i18n="projects.riseup.title">RiseUP</h3>
+              <p data-i18n="projects.riseup.desc">Повысили удовлетворенность пользователей – по отзывам, платформа стала удобнее.</p>
+              <span class="project-card-link" data-i18n="projects.riseup.link">Перейти к кейсу →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- MedReach -->
+        <div class="project-card">
+          <a href="medreach.html" class="case-link">
+            <div class="project-card-image">
+              <img src="img/Projects/Case_MedReach_upd.png" alt="MedReach" loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 data-i18n="projects.medreach.title">MedReach</h3>
+              <p data-i18n="projects.medreach.desc">Увеличили количество пользователей, которые проходили флоу верификации до конца.</p>
+              <span class="project-card-link" data-i18n="projects.medreach.link">Перейти к кейсу →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- SberQ -->
+        <div class="project-card">
+          <a href="sberq.html" class="case-link">
+            <div class="project-card-image">
+              <img src="img/Projects/Case_SberQ_upd.png" alt="SberQ" loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 data-i18n="projects.sberq.title">SberQ: HR-платформа</h3>
+              <p data-i18n="projects.sberq.desc">Сделали платформу, на которой ежегодно проходят оценку сотни кандидатов.</p>
+              <span class="project-card-link" data-i18n="projects.sberq.link">Перейти к кейсу →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- AnimationsAreEasy -->
+        <div class="project-card">
+          <a href="animations-are-easy.html" class="case-link">
+            <div class="project-card-image">
+              <div class="anim-cover" id="anim-cover">
+                <div class="anim-frame active" data-anim="card-deck">
+                  <div class="anim-deck-card card-1"><i class="ph ph-squares-four"></i></div>
+                  <div class="anim-deck-card card-2"><i class="ph ph-diamond"></i></div>
+                  <div class="anim-deck-card card-3"><i class="ph ph-heart-straight"></i></div>
+                  <div class="anim-deck-card card-4"><i class="ph ph-spade"></i></div>
+                </div>
+                <div class="anim-frame" data-anim="floating">
+                  <div class="anim-float-object"><i class="ph ph-cloud"></i></div>
+                  <div class="anim-float-shadow"></div>
+                </div>
+                <div class="anim-frame" data-anim="shake">
+                  <div class="anim-shake-box"><i class="ph ph-warning"></i></div>
+                </div>
+                <div class="anim-frame" data-anim="spinner">
+                  <div class="anim-spinner-ring"></div>
+                  <i class="ph ph-circle-notch anim-spinner-icon"></i>
+                </div>
+                <div class="anim-frame" data-anim="bounce">
+                  <div class="anim-bounce-ball"><i class="ph ph-circle"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-info">
+              <h3 data-i18n="projects.animations.title">AnimationsAreEasy</h3>
+              <p data-i18n="projects.animations.desc">Коллекция из 14 CSS-микроанимаций, готовых к использованию. Без JavaScript.</p>
+              <span class="project-card-link" data-i18n="projects.animations.link">Перейти к кейсу →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DAILYUI GALLERY ========== -->
+  <section class="section reveal" id="experiments">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="gallery.title">Визуальные эксперименты</h2>
+      </div>
+
+      <div class="gallery-grid stagger-children">
+        <div class="gallery-item">
+          <div class="image-wrapper">
+            <img src="img/Dribbble/SignUp.gif" alt="SignUp animation" loading="lazy">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="image-wrapper">
+            <img src="img/Dribbble/Onboarding_finapp.webp" alt="Onboarding" loading="lazy">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="image-wrapper">
+            <img src="img/Dribbble/Music.webp" alt="Music player" loading="lazy">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="image-wrapper">
+            <img src="img/Dribbble/Gradis.webp" alt="Gradis" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTS / FOOTER ========== -->
+  <footer class="section" id="contacts">
+    <div class="container" style="max-width: var(--content-width);">
+      <div class="footer-divider"></div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://t.me/aik_eto" target="_blank" rel="noopener" class="footer-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21.5 2L2.5 10.5l7 2.5 2.5 7 9-18z"/>
+              <path d="M12.5 13l4-4"/>
+            </svg>
+            Telegram
+          </a>
+          <a href="mailto:aik.saiadian@gmail.com" class="footer-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 4L12 13 2 4"/>
+            </svg>
+            aik.saiadian@gmail.com
+          </a>
+          <a href="resume.pdf" target="_blank" class="footer-link" data-i18n="contacts.resume">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <span data-i18n="contacts.resume">Резюме (PDF)</span>
+          </a>
+        </div>
+        <p class="meta-text footer-copy" data-i18n="contacts.copyright">© 2026 Айк — Продуктовый дизайнер</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/l10n.js"></script>
+  <script src="js/l10n-case-studies.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // AnimationsAreEasy — cover cycling
+    (function() {
+      var cover = document.getElementById('anim-cover');
+      if (!cover) return;
+      var frames = cover.querySelectorAll('.anim-frame');
+      var current = 0;
+      var total = frames.length;
+      function nextFrame() {
+        frames[current].classList.remove('active');
+        current = (current + 1) % total;
+        frames[current].classList.add('active');
+      }
+      setInterval(nextFrame, 3500);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Об авторе | Айк Саядян</title>
+  <meta name="description" content="О моём подходе к дизайну: когнитивная психология, информационный дизайн Бирмана, минимализм Айва. Почему метрики — не главное.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+  <style>
+    /* About page: nav starts blurred (no full-viewport hero) */
+    .nav { background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav nav-scrolled" id="nav">
+    <div class="nav-inner container" style="max-width: 1200px;">
+      <a href="index.html#hero" class="nav-logo">Айк</a>
+      <div class="nav-links">
+        <a href="#influences">Влияния</a>
+        <a href="#approach">Подход</a>
+        <a href="#books">Книги</a>
+      </div>
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container" style="padding-top: 100px;">
+      <nav class="case-nav reveal">
+        <a href="index.html" class="back-link">← Назад на главную</a>
+      </nav>
+
+      <section class="content-section" aria-label="Введение">
+        <div class="container container--narrow" style="padding: 0;">
+          <p class="about-intro">
+            Меня зовут Айк. Занимаюсь дизайном с 2020 — от небольших сервисов
+            до сложных HR-платформ.
+          </p>
+          <p class="about-intro">
+            Хорошо разбираюсь в дизайн-системах.
+          </p>
+          <p class="about-intro">
+            Но данные для меня — не самоцель. Я не верю в оправдание плохого дизайна ростом
+            метрик. В моём портфолио нет цифр в духе «увеличили удержание на 30%». Вместо
+            этого я показываю, как мои решения улучшили пользовательский опыт, основываясь
+            на фундаментальных принципах: когнитивной психологии, эвристиках и законах
+            восприятия.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section section--divider" id="influences" aria-label="Кто на меня повлиял">
+        <div class="container container--narrow" style="padding: 0;">
+          <span class="content-section__number">01</span>
+          <h2 class="content-section__title">Кто на меня повлиял</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: 24px;">
+            В дизайне я опираюсь на фундамент, заложенный мастерами. Вот кто сформировал моё мышление:
+          </p>
+
+          <div class="influence-list">
+            <div class="influence-card">
+              <h3 class="influence-card__name">Илья Бирман</h3>
+              <p class="influence-card__desc">
+                Информационный дизайн. Порядок в типографике, сетке, навигации, тексте.
+                «Пользователь не читает — он сканирует». Отсюда моё внимание к иерархии,
+                отступам и модульным сеткам.
+              </p>
+            </div>
+
+            <div class="influence-card">
+              <h3 class="influence-card__name">Джони Айв</h3>
+              <p class="influence-card__desc">
+                Минимализм и тактильность. Ничего лишнего, совершенство в деталях.
+                Каждый элемент должен иметь причину существования. Дизайн — это не то,
+                как выглядит, а то, как работает.
+              </p>
+            </div>
+
+            <div class="influence-card">
+              <h3 class="influence-card__name">Иоханнес Иттен</h3>
+              <p class="influence-card__desc">
+                Цвет и композиция. У Иттена я взял осознанное отношение к цвету:
+                каждый оттенок несёт смысл. Приглушённая база + один акцент —
+                не тренд, а принцип.
+              </p>
+            </div>
+
+            <div class="influence-card">
+              <h3 class="influence-card__name">Джефф Раскин</h3>
+              <p class="influence-card__desc">
+                «Интерфейс» — книга, которая объясняет, почему интерфейсы должны быть
+                когнитивно-эргономичными. Отсюда моё внимание к когнитивной нагрузке,
+                законам Фиттса и Хика.
+              </p>
+            </div>
+
+            <div class="influence-card">
+              <h3 class="influence-card__name">Артемий Лебедев</h3>
+              <p class="influence-card__desc">
+                «Ководство» — про ответственность дизайнера за каждую пиксель.
+                Дизайн — это профессия, а не искусство. Понятность важнее оригинальности.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section--divider" id="approach" aria-label="Мой подход">
+        <div class="container container--narrow" style="padding: 0;">
+          <span class="content-section__number">02</span>
+          <h2 class="content-section__title">Почему когнитивный подход</h2>
+          <div class="content-section__body">
+            <p>
+              Метрики — это следствие, а не причина. Когда я слышу «мы увеличили конверсию
+              на 25%», я не понимаю, хороший это дизайн или нет. Может, просто добавили
+              красную кнопку. Может, A/B-тест был некорректен. Может, через месяц всё
+              откатится назад.
+            </p>
+            <p>
+              Я предпочитаю другой путь. Я задаю вопросы: «Почему пользователь не проходит
+              верификацию? Что его останавливает? Как снизить его когнитивную нагрузку?»
+              И отвечаю на них, опираясь на фундаментальные принципы:
+            </p>
+          </div>
+
+          <div class="principle-list">
+            <div class="principle-list__item">
+              <h3 class="principle-list__item-title">Законы гештальта</h3>
+              <p class="principle-list__item-text">
+                Близость, подобие, замыкание, фигура и фон. Эти принципы работают на уровне
+                восприятия, независимо от культуры и контекста. Если элементы сгруппированы
+                правильно — пользователь понимает структуру мгновенно.
+              </p>
+            </div>
+
+            <div class="principle-list__item">
+              <h3 class="principle-list__item-title">Когнитивная нагрузка (закон Миллера)</h3>
+              <p class="principle-list__item-text">
+                Рабочая память человека может удерживать 7±2 элемента одновременно.
+                В любом интерфейсе я контролирую, чтобы ни один блок не превышал этот лимит.
+                Если информации больше — группирую, прячу под кат, разбиваю на шаги.
+              </p>
+            </div>
+
+            <div class="principle-list__item">
+              <h3 class="principle-list__item-title">Законы Фиттса и Хика</h3>
+              <p class="principle-list__item-text">
+                Время достижения цели зависит от её размера и расстояния (Фиттс). Время
+                принятия решения — от количества вариантов (Хика). Интерактивные элементы
+                в моих интерфейсах всегда достаточно крупные, с достаточными отступами.
+                Вариантов выбора — ровно столько, сколько нужно, не больше.
+              </p>
+            </div>
+
+            <div class="principle-list__item">
+              <h3 class="principle-list__item-title">Эвристики Нильсена</h3>
+              <p class="principle-list__item-text">
+                10 эвристик юзабилити — мой чек-лист для любого решения. Система говорит
+                пользователю, что происходит? Дизайн консистентен? Пользователь может
+                отменить действие? Если ответ «нет» на любой из этих вопросов — решение
+                нужно перепроектировать.
+              </p>
+            </div>
+
+            <div class="principle-list__item">
+              <h3 class="principle-list__item-title">Цвет по Иттену</h3>
+              <p class="principle-list__item-text">
+                Цвет — не украшение, а инструмент навигации внимания. Акцентный цвет
+                направляет взгляд к ключевым элементам. Приглушённая база не отвлекает
+                от содержания. Никаких случайных цветов — каждый оттенок осознан.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section--divider" id="books" aria-label="Книги">
+        <div class="container container--narrow" style="padding: 0;">
+          <span class="content-section__number">03</span>
+          <h2 class="content-section__title">Что я читал</h2>
+          <div class="content-section__body">
+            <p>Хороший дизайнер учится всю жизнь. Вот книги, которые сформировали моё мышление:</p>
+            <ul>
+              <li><strong>Иоханнес Иттен</strong> — «Искусство цвета»</li>
+              <li><strong>Джефф Раскин</strong> — «Интерфейс»</li>
+              <li><strong>Артемий Лебедев</strong> — «Ководство»</li>
+              <li><strong>Артемий Лебедев</strong> — «Психбольница в руках больных»</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__name">Айк Саядян</p>
+        <nav class="footer__links" aria-label="Контакты">
+          <a href="mailto:aik.saiadian@gmail.com" class="footer__link">Email</a>
+          <a href="https://t.me/aik_eto" class="footer__link" target="_blank" rel="noopener">Telegram</a>
+          <a href="resume.pdf" class="footer__link" download>Резюме</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/l10n.js"></script>
+  <script src="js/l10n-case-studies.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
