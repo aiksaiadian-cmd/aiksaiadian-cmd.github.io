@@ -67,75 +67,78 @@
             </div>
           </div>
         </div>
-
-        <div class="visual-frame visual-sberq">
-          <div class="shot-block fullwidth">
-            <img class="shot-img" src="img/sberq-simulator.png" alt="Симулятор рабочего дня CEO">
-            <div class="shot-copy">
-              <h3 data-i18n="casePages.sberq.visuals1Title">Симулятор рабочего дня CEO</h3>
-              <p data-i18n="casePages.sberq.visuals1Desc">Сделали оценку более реалистичной — теперь кандидаты проходят симуляцию рабочего дня с письмами, звонками и авралами, чтобы показать, как они справятся в реальной работе.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="visual-frame visual-sberq">
-          <div class="shot-block fullwidth">
-            <img class="shot-img" src="img/sberq-admin.png" alt="Админ-панель">
-            <div class="shot-copy">
-              <h3 data-i18n="casePages.sberq.visuals2Title">Админ-панель</h3>
-              <p data-i18n="casePages.sberq.visuals2Desc">Убрали необходимость править код для изменений — теперь всё настраивается прямо в интерфейсе: роли, материалы, тарифы и сценарии. Это снизило нагрузку на IT-отдел на 60%.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="visual-frame visual-sberq">
-          <div class="shot-block fullwidth">
-            <img class="shot-img" src="img/sberq-evaluator.png" alt="Интерфейс оценщика">
-            <div class="shot-copy">
-              <h3 data-i18n="casePages.sberq.visuals3Title">Интерфейс оценщика</h3>
-              <p data-i18n="casePages.sberq.visuals3Desc">Объединили календарь, оценку и библиотеку в одном месте. Теперь можно планировать сессии, оценивать по чек-листам и открывать материалы без переключения между разделами. Это убрало лишние действия и сделало оценку более объективной.</p>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- Моя роль и процесс проектирования -->
       <section id="process" class="reveal">
         <h2 data-i18n="casePages.sberq.processTitle">Моя роль и процесс проектирования</h2>
 
+        <!-- Навигация по шагам -->
+        <div class="step-cards">
+          <a href="#step-detail-1" class="step-card">
+            <span class="step-card-num">1</span>
+            <span class="step-card-title" data-i18n="casePages.sberq.process0Title">Анализ&nbsp;исследований</span>
+          </a>
+          <a href="#step-detail-2" class="step-card">
+            <span class="step-card-num">2</span>
+            <span class="step-card-title" data-i18n="casePages.sberq.process1Title">Формирование&nbsp;гипотез</span>
+          </a>
+          <a href="#step-detail-3" class="step-card">
+            <span class="step-card-num">3</span>
+            <span class="step-card-title" data-i18n="casePages.sberq.process2Title">Проектирование</span>
+          </a>
+          <a href="#step-detail-4" class="step-card">
+            <span class="step-card-num">4</span>
+            <span class="step-card-title" data-i18n="casePages.sberq.process3Title">Тестирование</span>
+          </a>
+          <a href="#step-detail-5" class="step-card">
+            <span class="step-card-num">5</span>
+            <span class="step-card-title" data-i18n="casePages.sberq.process4Title">Технические&nbsp;детали</span>
+          </a>
+        </div>
+
         <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
+          <div class="step" id="step-detail-1">
             <div class="step-content">
               <h3 data-i18n="casePages.sberq.process0Title">Анализ исследований</h3>
               <p data-i18n="casePages.sberq.process0Desc0">На старте команда Сбера передала нам все материалы по исследованиям:</p>
-              <ul>
-                <li data-i18n="casePages.sberq.process0List0">Расшифровки 10+ глубинных интервью с кандидатами и оценщиками.</li>
-                <li data-i18n="casePages.sberq.process0List1">Персоны пользователей.</li>
-                <li data-i18n="casePages.sberq.process0List2">Value Proposition Canvas.</li>
-                <li data-i18n="casePages.sberq.process0List3">Сравнение с конкурентами.</li>
-                <li data-i18n="casePages.sberq.process0List4">Текущий и целевой CJM.</li>
-                <li data-i18n="casePages.sberq.process0List5">Ролевая модель с описанием задач каждой группы.</li>
-              </ul>
+              <div class="visual-frame">
+                <div class="shot-block fullwidth">
+                  <img class="shot-img" src="img/sberq-analysis.png" alt="Материалы исследований">
+                </div>
+              </div>
               <p data-i18n="casePages.sberq.process0Desc1">Хочу поблагодарить коллег из Сбера за такую глубокую проработку исследований — это позволило мне как дизайнеру сразу погрузиться в контекст и принимать решения, опираясь не на догадки, а на реальные боли пользователей.</p>
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">2</div>
+          <div class="step" id="step-detail-2">
             <div class="step-content">
-              <h3 data-i18n="casePages.sberq.process1Title">Формирование гипотез и проектных задач</h3>
+              <h3 data-i18n="casePages.sberq.process1Title">Формирование гипотез</h3>
               <p data-i18n="casePages.sberq.process1Desc">На основе анализа CJM и ролевой модели я выделил ключевые пользовательские сценарии и сформулировал гипотезы, которые предстояло проверить:</p>
-              <ul>
-                <li><strong>Для кандидата:</strong> «Если на главном экране визуализировать все этапы оценки с понятными статусами и сроками, пользователь перестанет теряться и реже будет обращаться в поддержку».</li>
-                <li><strong>Для оценщика:</strong> «Если объединить календарь, профили кандидатов, чек-листы и материалы для оценки в единый рабочий стол, асессор сможет проводить оценку быстрее и без переключения контекста».</li>
-                <li><strong>Для администратора:</strong> «Если предоставить интерактивную аналитику с возможностью сравнивать кандидатов и команды, HR будет принимать более обоснованные решения».</li>
-              </ul>
+              <div class="sticky-board">
+                <div class="sticky-col">
+                  <div class="sticky-group-label">Для кандидата</div>
+                  <div class="sticky-note yellow" style="transform: rotate(-2deg) translateY(3px);">
+                    Если на главном экране визуализировать все этапы оценки с понятными статусами и сроками, пользователь перестанет теряться и реже будет обращаться в поддержку.
+                  </div>
+                </div>
+                <div class="sticky-col">
+                  <div class="sticky-group-label">Для оценщика</div>
+                  <div class="sticky-note yellow" style="transform: rotate(1.5deg) translateY(-2px);">
+                    Если объединить календарь, профили кандидатов, чек-листы и материалы для оценки в единый рабочий стол, асессор сможет проводить оценку быстрее и без переключения контекста.
+                  </div>
+                </div>
+                <div class="sticky-col">
+                  <div class="sticky-group-label">Для администратора</div>
+                  <div class="sticky-note yellow" style="transform: rotate(-1deg) translateY(5px);">
+                    Если предоставить интерактивную аналитику с возможностью сравнивать кандидатов и команды, HR будет принимать более обоснованные решения.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">3</div>
+          <div class="step" id="step-detail-3">
             <div class="step-content">
               <h3 data-i18n="casePages.sberq.process2Title">Проектирование</h3>
               <p data-i18n="casePages.sberq.process2Desc0">Первым делом я пересмотрел структуру разделов, отталкиваясь от ролевой модели. Вместо единого для всех меню мы спроектировали персонализированную навигацию:</p>
@@ -148,8 +151,19 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">4</div>
+          <div class="process-break">
+            <div class="visual-frame visual-sberq">
+              <div class="shot-block fullwidth">
+                <img class="shot-img" src="img/sberq-simulator.png" alt="Симулятор рабочего дня CEO">
+                <div class="shot-copy">
+                  <h3 data-i18n="casePages.sberq.visuals1Title">Симулятор рабочего дня CEO</h3>
+                  <p data-i18n="casePages.sberq.visuals1Desc">Сделали оценку более реалистичной — теперь кандидаты проходят симуляцию рабочего дня с письмами, звонками и авралами, чтобы показать, как они справятся в реальной работе.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step" id="step-detail-4">
             <div class="step-content">
               <h3 data-i18n="casePages.sberq.process3Title">Тестирование</h3>
               <p data-i18n="casePages.sberq.process3Desc">Мы провели юзабилити-тестирование прототипов на 5 респондентах из каждой роли. Сессии проходили онлайн с демонстрацией экрана. Основные замечания касались:</p>
@@ -162,8 +176,7 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">5</div>
+          <div class="step" id="step-detail-5">
             <div class="step-content">
               <h3 data-i18n="casePages.sberq.process4Title">Технические детали</h3>
               <p data-i18n="casePages.sberq.process4Desc0">
@@ -180,6 +193,18 @@
         </div>
       </section>
 
+      <div class="process-break">
+        <div class="visual-frame visual-sberq">
+          <div class="shot-block fullwidth">
+            <img class="shot-img" src="img/sberq-admin.png" alt="Админ-панель">
+            <div class="shot-copy">
+              <h3 data-i18n="casePages.sberq.visuals2Title">Админ-панель</h3>
+              <p data-i18n="casePages.sberq.visuals2Desc">Убрали необходимость править код для изменений — теперь всё настраивается прямо в интерфейсе: роли, материалы, тарифы и сценарии. Это снизило нагрузку на IT-отдел на 60%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Решение -->
       <section id="solution" class="reveal">
         <h2 data-i18n="casePages.sberq.solutionTitle">Решение</h2>
@@ -188,6 +213,16 @@
           <li><strong>Оценщик</strong> в своём интерфейсе получает доступ к расписанию, профилям кандидатов, чек-листам оценки и материалам — всё в одном окне без переключений.</li>
           <li><strong>Администратор</strong> видит аналитические дашборды с агрегированными данными по кандидатам, сравнением компетенций, бенчмаркингом — вместо папок с PDF.</li>
         </ul>
+
+        <div class="visual-frame visual-sberq">
+          <div class="shot-block fullwidth">
+            <img class="shot-img" src="img/sberq-evaluator.png" alt="Интерфейс оценщика">
+            <div class="shot-copy">
+              <h3 data-i18n="casePages.sberq.visuals3Title">Интерфейс оценщика</h3>
+              <p data-i18n="casePages.sberq.visuals3Desc">Объединили календарь, оценку и библиотеку в одном месте. Теперь можно планировать сессии, оценивать по чек-листам и открывать материалы без переключения между разделами. Это убрало лишние действия и сделало оценку более объективной.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Планы на будущее -->
@@ -205,8 +240,13 @@
     </main>
 
     <div class="case-navigation">
-      <a href="medreach.html" class="prev-case" data-i18n="casePages.sberq.navPrev">← MedReach</a>
-      <a href="riseup.html" class="next-case" data-i18n="casePages.sberq.navNext">RiseUP →</a>
+      <h3 class="also-title">Смотреть также</h3>
+      <ul class="also-list">
+        <li><a href="riseup.html">RiseUP</a></li>
+        <li><a href="medreach.html">MedReach</a></li>
+        <li><span class="you-are-here">SberQ — Вы здесь</span></li>
+        <li><a href="animations-are-easy.html">AnimationsAreEasy</a></li>
+      </ul>
     </div>
   </div>
 

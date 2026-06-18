@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -25,7 +25,7 @@
 
   <div class="container" style="padding-top: 100px;">
     <nav class="case-nav reveal">
-      <a href="index.html" class="back-link" data-i18n="casePages.riseup.backLink">← Назад на главную</a>
+      <a href="index.html" class="back-link" data-i18n="casePages.riseup.backLink">← Назад на&nbsp;главную</a>
     </nav>
 
     <header class="case-header reveal">
@@ -41,132 +41,174 @@
       <!-- Контекст -->
       <section id="context" class="reveal">
         <h2 data-i18n="casePages.riseup.contextTitle">Контекст</h2>
-        <p data-i18n="casePages.riseup.contextBody0">
-          Так как проект внутренний, я вживую общался с реальными пользователями. Не было необходимости даже организовать отдельные встречи — общение происходило на кофепоинте, в коридорах, за рабочим местом.
+        <p data-i18n="casePages.riseup.contextProblem">
+          Ко мне пришли с&nbsp;проблемой: внутренняя платформа для&nbsp;записи на&nbsp;экзамены и управления процессом оценки сотрудников была неудобной — пользователи путались в&nbsp;интерфейсе, администраторы тратили много времени на&nbsp;рутинные операции, а принимающие были недовольны процессом.
         </p>
+        <p data-i18n="casePages.riseup.contextBody0">
+          Так как проект внутренний, я вживую общался с&nbsp;реальными пользователями. Не было необходимости даже организовать отдельные встречи — общение происходило на&nbsp;кофепоинте, в&nbsp;коридорах, за&nbsp;рабочим местом.
+        </p>
+
+        <!-- Вход в систему — заметный блок с первого экрана -->
+        <div class="visual-frame visual-riseup">
+          <div class="shot-block fullwidth">
+            <img class="shot-img" src="img/login_gif.gif" alt="Вход в систему">
+            <div class="shot-copy">
+              <h3 data-i18n="casePages.riseup.visuals3Title">Вход в&nbsp;систему</h3>
+              <p data-i18n="casePages.riseup.visuals3Desc">Самые популярные способы входа (по телефону и через&nbsp;Яндекс ID) вынесены на&nbsp;главный экран, остальные спрятаны под&nbsp;кнопкой «?».</p>
+            </div>
+          </div>
+        </div>
+
         <p data-i18n="casePages.riseup.contextBody1">
-          Так собрал список критичных замечаний, которые приходили сразу на ум пользователям. Но предположительно были и неудобства, о которых не вспомнили или привыкли, не думая, что можно получше. Поэтому просил в следующий раз при взаимодействии с инструментом звать меня, чтобы я наблюдал, как они выполняют свои обычные задачи, комментируя вслух.
+          Так собрал список критичных замечаний, которые приходили сразу на&nbsp;ум пользователям. Но предположительно были и неудобства, о&nbsp;которых не вспомнили или привыкли, не думая, что можно получше. Поэтому просил в&nbsp;следующий раз при&nbsp;взаимодействии с&nbsp;инструментом звать меня, чтобы я наблюдал, как они выполняют свои обычные задачи, комментируя вслух.
         </p>
         <p>
           Основными представителями пользователей стали <strong>Никита</strong> — администратор системы и <strong>Дима</strong> — принимающий экзамены.
         </p>
       </section>
 
-      <!-- Что я услышал и увидел -->
-      <section id="problems" class="reveal">
-        <h2 data-i18n="casePages.riseup.problemsTitle">Что я услышал и увидел</h2>
-        <p data-i18n="casePages.riseup.problemsIntro0">У Никиты уже был список предполагаемых улучшений, которые бы он хотел увидеть:</p>
-        <ul>
-          <li data-i18n="casePages.riseup.problemsList0">Возможность во время записи на экзамен выбора технологии, языка программирования для сдачи.</li>
-          <li data-i18n="casePages.riseup.problemsList1">Возможность добавлять и удалять из платформы принимающих экзамены.</li>
-          <li data-i18n="casePages.riseup.problemsList2">Переработка флоу назначения принимающих.</li>
-        </ul>
-
-        <p data-i18n="casePages.riseup.problemsIntro1">У Димы были замечания к интерфейсу принимающего:</p>
-        <ul>
-          <li data-i18n="casePages.riseup.problemsList3">Интерфейс не персонализирован под роль.</li>
-          <li data-i18n="casePages.riseup.problemsList4">Флоу выбора времени и места проведения экзамена неудобен.</li>
-        </ul>
-
-        <p data-i18n="casePages.riseup.problemsIntro2">А вот что я заметил во время наблюдений:</p>
-        <ul>
-          <li data-i18n="casePages.riseup.problemsList5">Непроработанная структура платформы.</li>
-          <li data-i18n="casePages.riseup.problemsList6">Неясный интерфейсный текст (даже опытные пользователи не были уверены в используемой на экране терминологии).</li>
-          <li data-i18n="casePages.riseup.problemsList7">Лишние вынужденные шаги, страницы, смысл которых не смог подсказать ни один пользователь.</li>
-          <li data-i18n="casePages.riseup.problemsList8">Изолированную от контекста статистику, которая могла бы быть очень полезна в нужном контексте.</li>
-        </ul>
-      </section>
-
-      <!-- Визуализация -->
-      <section id="visuals" class="reveal">
-        <h2 data-i18n="casePages.riseup.visualsTitle">Визуализация</h2>
-
-        <div class="visual-frame visual-riseup">
-          <div class="shot-block fullwidth">
-            <img class="shot-img" src="img/editing_list_img.png" alt="Редактирование списка принимающих">
-            <div class="shot-copy">
-              <h3 data-i18n="casePages.riseup.visuals0Title">Редактирование списка принимающих</h3>
-              <p data-i18n="casePages.riseup.visuals0Desc">Раньше администраторам приходилось добавлять принимающих через код, что занимало много времени. Теперь можно добавить принимающего прямо в интерфейсе — выбираешь из списка недавних техлидов.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="visual-frame visual-riseup">
-          <div class="shot-block-row">
-            <div class="shot-block" style="grid-template-columns:1fr;">
-              <img class="shot-img short" src="img/exam_img_0.png" alt="Назначение принимающего">
-              <div class="shot-copy">
-                <h3 data-i18n="casePages.riseup.visuals1Title">Назначение принимающего</h3>
-                <p data-i18n="casePages.riseup.visuals1Desc">При выборе принимающего сразу видно, насколько он занят и сколько экзаменов уже принял по нужной компетенции.</p>
-              </div>
-            </div>
-            <div class="shot-block" style="grid-template-columns:1fr;">
-              <img class="shot-img" src="img/details_img_0.png" alt="Бронирование места">
-              <div class="shot-copy">
-                <h3 data-i18n="casePages.riseup.visuals2Title">Бронирование места</h3>
-                <p data-i18n="casePages.riseup.visuals2Desc">Принимающие жаловались, что место и время выбираются в одном меню — это было неудобно. Разделили на два отдельных меню.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="visual-frame visual-riseup">
-          <div class="shot-block fullwidth">
-            <img class="shot-img" src="img/login_gif.gif" alt="Вход в систему">
-            <div class="shot-copy">
-              <h3 data-i18n="casePages.riseup.visuals3Title">Вход в систему</h3>
-              <p data-i18n="casePages.riseup.visuals3Desc">Самые популярные способы входа (по телефону и через Яндекс ID) вынесены на главный экран, остальные спрятаны под кнопкой «?».</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Процесс -->
+      <!-- Процесс (с интегрированными визуалами) -->
       <section id="process" class="reveal">
         <h2 data-i18n="casePages.riseup.processTitle">Процесс</h2>
 
+        <!-- Навигация по шагам -->
+        <div class="step-cards">
+          <a href="#step-detail-1" class="step-card">
+            <span class="step-card-num">1</span>
+            <span class="step-card-title" data-i18n="casePages.riseup.process0Title">Исследование</span>
+          </a>
+          <a href="#step-detail-2" class="step-card">
+            <span class="step-card-num">2</span>
+            <span class="step-card-title" data-i18n="casePages.riseup.process1Title">Гипотезы</span>
+          </a>
+          <a href="#step-detail-3" class="step-card">
+            <span class="step-card-num">3</span>
+            <span class="step-card-title" data-i18n="casePages.riseup.process2Title">Проектирование и&nbsp;валидация</span>
+          </a>
+        </div>
+
         <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
+
+          <!-- Шаг 1: Исследование -->
+          <div class="step" id="step-detail-1">
             <div class="step-content">
               <h3 data-i18n="casePages.riseup.process0Title">Исследование</h3>
-              <p data-i18n="casePages.riseup.process0Desc">Провел серию интервью и сессий наблюдения с тремя группами пользователей: техлидами (экзаменаторами), администраторами и сотрудниками. Главные инсайты из бесед:</p>
+              <p data-i18n="casePages.riseup.process0Desc">Провел серию интервью и сессий наблюдения с&nbsp;тремя группами пользователей: техлидами (экзаменаторами), администраторами и сотрудниками. Главные инсайты из&nbsp;бесед:</p>
               <ul>
                 <li data-i18n="casePages.riseup.process0List0">Техлиды используют только 10% интерфейса — страницу «Мои экзамены», остальное создает шум.</li>
-                <li data-i18n="casePages.riseup.process0List1">Администраторы тратят много времени на рутинные действия, например, добавление принимающих через код.</li>
-                <li data-i18n="casePages.riseup.process0List2">Экран входа перегружен, что вызывает ступор у новых пользователей.</li>
+                <li data-i18n="casePages.riseup.process0List1">Администраторы тратят много времени на&nbsp;рутинные действия, например, добавление принимающих через&nbsp;код.</li>
+                <li data-i18n="casePages.riseup.process0List2">Экран входа перегружен, что вызывает ступор у&nbsp;новых пользователей.</li>
               </ul>
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">2</div>
+          <!-- Доска с заметками — после шага 1 -->
+          <div class="process-break">
+            <div class="sticky-board">
+
+              <div class="sticky-col">
+                <div class="sticky-group-label" data-i18n="casePages.riseup.problemsIntro0">Желания Никиты</div>
+                <div class="sticky-note yellow" style="transform: rotate(-3.2deg) translateY(-3px);" data-i18n="casePages.riseup.problemsList0">
+                  Возможность во время записи на&nbsp;экзамен выбора технологии, языка программирования для&nbsp;сдачи.
+                </div>
+                <div class="sticky-note yellow" style="transform: rotate(1.8deg) translateY(5px);" data-i18n="casePages.riseup.problemsList1">
+                  Возможность добавлять и удалять из&nbsp;платформы принимающих экзамены.
+                </div>
+                <div class="sticky-note yellow" style="transform: rotate(-0.8deg) translateY(-1px);" data-i18n="casePages.riseup.problemsList2">
+                  Переработка флоу назначения принимающих.
+                </div>
+              </div>
+
+              <div class="sticky-col">
+                <div class="sticky-group-label" data-i18n="casePages.riseup.problemsIntro1">Замечания Димы</div>
+                <div class="sticky-note blue" style="transform: rotate(3.5deg) translateY(2px);" data-i18n="casePages.riseup.problemsList3">
+                  Интерфейс не персонализирован под&nbsp;роль.
+                </div>
+                <div class="sticky-note blue" style="transform: rotate(-2.8deg) translateY(-4px);" data-i18n="casePages.riseup.problemsList4">
+                  Флоу выбора времени и места проведения экзамена неудобен.
+                </div>
+              </div>
+
+              <div class="sticky-col">
+                <div class="sticky-group-label" data-i18n="casePages.riseup.problemsIntro2">Мои наблюдения</div>
+                <div class="sticky-note pink" style="transform: rotate(-2.5deg) translateY(3px);" data-i18n="casePages.riseup.problemsList5">
+                  Непроработанная структура платформы.
+                </div>
+                <div class="sticky-note pink" style="transform: rotate(3.8deg) translateY(-5px);" data-i18n="casePages.riseup.problemsList6">
+                  Неясный интерфейсный текст (даже опытные пользователи не были уверены в&nbsp;используемой на&nbsp;экране терминологии).
+                </div>
+                <div class="sticky-note pink" style="transform: rotate(1.8deg) translateY(-3px);" data-i18n="casePages.riseup.problemsList8">
+                  Изолированную от&nbsp;контекста статистику, которая могла бы быть очень полезна в&nbsp;нужном контексте.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Шаг 2: Гипотезы -->
+          <div class="step" id="step-detail-2">
             <div class="step-content">
               <h3 data-i18n="casePages.riseup.process1Title">Гипотезы</h3>
-              <p data-i18n="casePages.riseup.process1Desc">Основываясь на этих наблюдениях, я сформулировал несколько гипотез:</p>
+              <p data-i18n="casePages.riseup.process1Desc">Основываясь на&nbsp;этих наблюдениях, я сформулировал несколько гипотез:</p>
               <ul>
-                <li data-i18n="casePages.riseup.process1List0">Если персонализировать интерфейс под конкретную роль, пользователи перестанут тратить время на фильтрацию лишней информации.</li>
-                <li data-i18n="casePages.riseup.process1List1">Если заменить программирование на выбор из списка, администраторы будут выполнять задачу быстрее и с меньшим количеством ошибок.</li>
-                <li data-i18n="casePages.riseup.process1List2">Если разделить сложные действия на последовательные шаги, количество путаницы снизится.</li>
-                <li data-i18n="casePages.riseup.process1List3">Если убрать редко используемые способы входа с главного экрана, процесс входа станет интуитивным.</li>
+                <li data-i18n="casePages.riseup.process1List0">Если персонализировать интерфейс под&nbsp;конкретную роль, пользователи перестанут тратить время на&nbsp;фильтрацию лишней информации.</li>
+                <li data-i18n="casePages.riseup.process1List1">Если заменить программирование на&nbsp;выбор из&nbsp;списка, администраторы будут выполнять задачу быстрее и с&nbsp;меньшим количеством ошибок.</li>
+                <li data-i18n="casePages.riseup.process1List2">Если разделить сложные действия на&nbsp;последовательные шаги, количество путаницы снизится.</li>
+                <li data-i18n="casePages.riseup.process1List3">Если убрать редко используемые способы входа с&nbsp;главного экрана, процесс входа станет интуитивным.</li>
               </ul>
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">3</div>
+          <!-- Визуал: Назначение принимающего + Бронирование места — после шага 2 -->
+          <div class="process-break">
+            <div class="visual-frame visual-riseup">
+              <div class="shot-block-row">
+                <div class="shot-block" style="grid-template-columns:1fr;">
+                  <img class="shot-img short" src="img/exam_img_0.png" alt="Назначение принимающего">
+                  <div class="shot-copy">
+                    <h3 data-i18n="casePages.riseup.visuals1Title">Назначение принимающего</h3>
+                    <p data-i18n="casePages.riseup.visuals1Desc">При выборе принимающего сразу видно, насколько он занят и сколько экзаменов уже принял по&nbsp;нужной компетенции.</p>
+                  </div>
+                </div>
+                <div class="shot-block" style="grid-template-columns:1fr;">
+                  <img class="shot-img" src="img/details_img_0.png" alt="Бронирование места">
+                  <div class="shot-copy">
+                    <h3 data-i18n="casePages.riseup.visuals2Title">Бронирование места</h3>
+                    <p data-i18n="casePages.riseup.visuals2Desc">Принимающие жаловались, что место и время выбираются в&nbsp;одном меню — это было неудобно. Разделили на&nbsp;два отдельных меню.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Шаг 3: Проектирование и&nbsp;валидация -->
+          <div class="step" id="step-detail-3">
             <div class="step-content">
-              <h3 data-i18n="casePages.riseup.process2Title">Проектирование и тестирование</h3>
-              <p data-i18n="casePages.riseup.process2Desc">На основе гипотез я спроектировал новую структуру и провел юзабилити-тестирование прототипов на тех же пользователях. Ключевые изменения:</p>
+              <h3 data-i18n="casePages.riseup.process2Title">Проектирование и&nbsp;валидация</h3>
+              <p data-i18n="casePages.riseup.process2Desc">На основе гипотез я спроектировал новую структуру и провел юзабилити-тестирование прототипов на&nbsp;тех же пользователях. Ключевые изменения:</p>
               <ul>
-                <li><strong>Персонализация интерфейса под роль.</strong> Убрал лишние страницы из версии для принимающих.</li>
-                <li><strong>Замена программирования на выбор из списка.</strong> Вместо ввода кода администратор теперь выбирает фамилию принимающего из выпадающего списка недавних пользователей.</li>
-                <li><strong>Группировка по смыслу.</strong> Разделил выбор времени и места бронирования на два последовательных шага, чтобы не перегружать пользователя.</li>
-                <li><strong>Перенос статистики в контекст задачи.</strong> Убрал абстрактные цифры в отдельный блок, оставив только те данные, которые влияют на принятие решения.</li>
-                <li><strong>Упрощение входа.</strong> Оставил на главном экране только два самых популярных способа (телефон и Яндекс ID), остальные спрятал под кнопку «Другие способы».</li>
+                <li><strong>Персонализация интерфейса под&nbsp;роль.</strong> Убрал лишние страницы из&nbsp;версии для&nbsp;принимающих.</li>
+                <li><strong>Замена программирования на&nbsp;выбор из&nbsp;списка.</strong> Вместо ввода кода администратор теперь выбирает фамилию принимающего из&nbsp;выпадающего списка недавних пользователей.</li>
+                <li><strong>Группировка по&nbsp;смыслу.</strong> Разделил выбор времени и места бронирования на&nbsp;два последовательных шага, чтобы не перегружать пользователя.</li>
+                <li><strong>Перенос статистики в&nbsp;контекст задачи.</strong> Убрал абстрактные цифры в&nbsp;отдельный блок, оставив только те данные, которые влияют на&nbsp;принятие решения.</li>
+                <li><strong>Упрощение входа.</strong> Оставил на&nbsp;главном экране только два самых популярных способа (телефон и Яндекс ID), остальные спрятал под&nbsp;кнопку «Другие способы».</li>
               </ul>
             </div>
           </div>
+
+          <!-- Визуал: Редактирование списка принимающих — после шага 3 -->
+          <div class="process-break">
+            <div class="visual-frame visual-riseup">
+              <div class="shot-block fullwidth">
+                <img class="shot-img" src="img/editing_list_img.png" alt="Редактирование списка принимающих">
+                <div class="shot-copy">
+                  <h3 data-i18n="casePages.riseup.visuals0Title">Редактирование списка принимающих</h3>
+                  <p data-i18n="casePages.riseup.visuals0Desc">Раньше администраторам приходилось добавлять принимающих через&nbsp;код, что занимало много времени. Теперь можно добавить принимающего прямо в&nbsp;интерфейсе — выбираешь из&nbsp;списка недавних техлидов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -174,14 +216,20 @@
       <section id="conclusion" class="reveal">
         <h2 data-i18n="casePages.riseup.conclusionTitle">Мой вывод</h2>
         <p data-i18n="casePages.riseup.conclusionBody">
-          Живое общение с пользователем даёт глубину, которую не получить из аналитики. Когда ты видишь эмоции человека, слышишь его интонации, понимаешь, что для него действительно важно.
+          Живое общение с&nbsp;пользователем даёт глубину, которую не получить из&nbsp;аналитики. Когда ты видишь эмоции человека, слышишь его интонации, понимаешь, что для&nbsp;него действительно важно.
         </p>
       </section>
+
     </main>
 
     <div class="case-navigation">
-      <a href="sberq.html" class="prev-case" data-i18n="casePages.riseup.navPrev">← SberQ</a>
-      <a href="medreach.html" class="next-case" data-i18n="casePages.riseup.navNext">MedReach →</a>
+      <h3 class="also-title">Смотреть также</h3>
+      <ul class="also-list">
+        <li><span class="you-are-here">RiseUP — Вы здесь</span></li>
+        <li><a href="medreach.html">MedReach</a></li>
+        <li><a href="sberq.html">SberQ</a></li>
+        <li><a href="animations-are-easy.html">AnimationsAreEasy</a></li>
+      </ul>
     </div>
   </div>
 

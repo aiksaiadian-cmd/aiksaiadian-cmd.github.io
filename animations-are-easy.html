@@ -52,6 +52,14 @@
 
       <!-- 3-grid: Situation → Task -->
       <div class="case-anim-embed case-anim-grid-3">
+        <div class="cell is-visible" data-animation="cursor-drag">
+          <div class="preview">
+            <div class="drag-card"><i class="ph-fill ph-cube"></i></div>
+            <div class="cursor-pointer"><i class="ph-fill ph-cursor"></i></div>
+            <div class="cursor-grab"><i class="ph-fill ph-hand-grabbing"></i></div>
+          </div>
+          <figcaption>Cursor Drag</figcaption>
+        </div>
         <div class="cell is-visible" data-animation="card-deck">
           <div class="preview">
             <div class="deck-card card-1"><i class="ph ph-squares-four"></i></div>
@@ -61,18 +69,21 @@
           </div>
           <figcaption>Card Deck</figcaption>
         </div>
-        <div class="cell is-visible" data-animation="shake-nudge">
+        <div class="cell is-visible" data-animation="emoji-spiral">
           <div class="preview">
-            <div class="shake-box"><i class="ph ph-warning"></i></div>
+            <div class="spiral-track">
+              <span class="spiral-emoji emoji-1">🖱️</span>
+              <span class="spiral-emoji emoji-2">✨</span>
+              <span class="spiral-emoji emoji-3">😡</span>
+              <span class="spiral-emoji emoji-4">😊</span>
+              <span class="spiral-emoji emoji-5">😢</span>
+              <span class="spiral-emoji emoji-6">❤️</span>
+              <span class="spiral-emoji emoji-7">👀</span>
+              <span class="spiral-emoji emoji-8">⭐</span>
+              <span class="spiral-emoji emoji-9">💫</span>
+            </div>
           </div>
-          <figcaption>Shake / Nudge</figcaption>
-        </div>
-        <div class="cell is-visible" data-animation="floating-bobbing">
-          <div class="preview">
-            <div class="float-object"><i class="ph ph-cloud"></i></div>
-            <div class="float-shadow"></div>
-          </div>
-          <figcaption>Floating / Bobbing</figcaption>
+          <figcaption>Emoji Spiral</figcaption>
         </div>
       </div>
 
@@ -90,46 +101,28 @@
         </ul>
       </section>
 
-      <!-- 3-grid: Task → Action -->
-      <div class="case-anim-embed case-anim-grid-3">
-        <div class="cell is-visible" data-animation="cursor-drag">
-          <div class="preview">
-            <div class="drag-card"><i class="ph ph-cube"></i></div>
-            <div class="cursor-pointer"><i class="ph ph-cursor"></i></div>
-            <div class="cursor-grab"><i class="ph ph-hand-grabbing"></i></div>
-          </div>
-          <figcaption>Cursor Drag</figcaption>
-        </div>
-        <div class="cell is-visible" data-animation="emoji-spiral">
-          <div class="preview">
-            <div class="spiral-track">
-              <span class="spiral-emoji emoji-1">🖱️</span>
-              <span class="spiral-emoji emoji-2">✨</span>
-              <span class="spiral-emoji emoji-3">😡</span>
-              <span class="spiral-emoji emoji-4">😊</span>
-              <span class="spiral-emoji emoji-5">😢</span>
-              <span class="spiral-emoji emoji-6">❤️</span>
-              <span class="spiral-emoji emoji-7">👀</span>
-              <span class="spiral-emoji emoji-8">⭐</span>
-            </div>
-          </div>
-          <figcaption>Emoji Spiral</figcaption>
-        </div>
-        <div class="cell is-visible" data-animation="glow-button">
-          <div class="preview">
-            <button class="glow-btn"><i class="ph ph-star"></i> Hover Me</button>
-          </div>
-          <figcaption>Glow / Pulse Button</figcaption>
-        </div>
-      </div>
-
       <!-- Action -->
       <section id="action" class="reveal">
         <h2 data-i18n="casePages.animations.actionTitle">Действия</h2>
 
+        <!-- Навигация по шагам -->
+        <div class="step-cards">
+          <a href="#step-detail-1" class="step-card">
+            <span class="step-card-num">1</span>
+            <span class="step-card-title" data-i18n="casePages.animations.action0Title">Исследование и&nbsp;отбор эффектов</span>
+          </a>
+          <a href="#step-detail-2" class="step-card">
+            <span class="step-card-num">2</span>
+            <span class="step-card-title" data-i18n="casePages.animations.action1Title">Разработка анимаций</span>
+          </a>
+          <a href="#step-detail-3" class="step-card">
+            <span class="step-card-num">3</span>
+            <span class="step-card-title" data-i18n="casePages.animations.action2Title">Демо-страница и&nbsp;деплой</span>
+          </a>
+        </div>
+
         <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
+          <div class="step" id="step-detail-1">
             <div class="step-content">
               <h3 data-i18n="casePages.animations.action0Title">Исследование и отбор эффектов</h3>
               <p data-i18n="casePages.animations.action0Desc">
@@ -145,8 +138,32 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">2</div>
+          <!-- 3-grid: Исследование → Разработка -->
+          <div class="case-anim-embed case-anim-grid-3" style="margin-bottom: 32px;">
+            <div class="cell is-visible" data-animation="shake-nudge">
+              <div class="preview">
+                <div class="shake-box"><i class="ph ph-warning"></i></div>
+              </div>
+              <figcaption>Shake / Nudge</figcaption>
+            </div>
+            <div class="cell is-visible" data-animation="floating-bobbing">
+              <div class="preview">
+                <div class="float-object"><i class="ph ph-cloud"></i></div>
+                <div class="float-shadow"></div>
+              </div>
+              <figcaption>Floating / Bobbing</figcaption>
+            </div>
+            <div class="cell is-visible" data-animation="typing-effect">
+              <div class="preview">
+                <div class="typing-wrapper">
+                  <span class="typing-text">Hello World</span>
+                </div>
+              </div>
+              <figcaption>Typing Effect</figcaption>
+            </div>
+          </div>
+
+          <div class="step" id="step-detail-2">
             <div class="step-content">
               <h3 data-i18n="casePages.animations.action1Title">Разработка анимаций</h3>
               <p data-i18n="casePages.animations.action1Desc">
@@ -161,8 +178,7 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">3</div>
+          <div class="step" id="step-detail-3">
             <div class="step-content">
               <h3 data-i18n="casePages.animations.action2Title">Демо-страница и деплой</h3>
               <p data-i18n="casePages.animations.action2Desc0">
@@ -172,6 +188,32 @@
                 Страница опубликована на GitHub Pages, иконки — Phosphor (MIT). Репозиторий открыт для использования и форков.
               </p>
             </div>
+          </div>
+        </div>
+
+        <!-- 3-grid: Action → Result -->
+        <div class="case-anim-embed case-anim-grid-3">
+          <div class="cell is-visible" data-animation="skeleton-shimmer">
+            <div class="preview">
+              <div class="skeleton-avatar"></div>
+              <div class="skeleton-line line-1"></div>
+              <div class="skeleton-line line-2"></div>
+              <div class="skeleton-line line-3"></div>
+            </div>
+            <figcaption>Skeleton Shimmer</figcaption>
+          </div>
+          <div class="cell is-visible" data-animation="bounce-elastic">
+            <div class="preview">
+              <div class="bounce-ball"><i class="ph ph-circle"></i></div>
+            </div>
+            <figcaption>Bounce / Elastic</figcaption>
+          </div>
+          <div class="cell is-visible" data-animation="loading-spinner">
+            <div class="preview">
+              <div class="spinner-ring"></div>
+              <i class="ph ph-circle-notch"></i>
+            </div>
+            <figcaption>Loading Spinner</figcaption>
           </div>
         </div>
 
@@ -203,40 +245,19 @@
         </div>
       </section>
 
-      <!-- 3-grid: Action → Result -->
-      <div class="case-anim-embed case-anim-grid-3">
-        <div class="cell is-visible" data-animation="skeleton-shimmer">
-          <div class="preview">
-            <div class="skeleton-avatar"></div>
-            <div class="skeleton-line line-1"></div>
-            <div class="skeleton-line line-2"></div>
-            <div class="skeleton-line line-3"></div>
-          </div>
-          <figcaption>Skeleton Shimmer</figcaption>
-        </div>
-        <div class="cell is-visible" data-animation="bounce-elastic">
-          <div class="preview">
-            <div class="bounce-ball"><i class="ph ph-circle"></i></div>
-          </div>
-          <figcaption>Bounce / Elastic</figcaption>
-        </div>
-        <div class="cell is-visible" data-animation="loading-spinner">
-          <div class="preview">
-            <div class="spinner-ring"></div>
-            <i class="ph ph-circle-notch"></i>
-          </div>
-          <figcaption>Loading Spinner</figcaption>
-        </div>
-      </div>
-
+      <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px;">
+        Icons by <a href="https://phosphoricons.com" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">Phosphor</a> under MIT license.
+      </p>
     </main>
 
-    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px;">
-      Icons by <a href="https://phosphoricons.com" target="_blank" rel="noopener" style="color: var(--color-black); text-decoration: underline;">Phosphor</a> under MIT license.
-    </p>
     <div class="case-navigation">
-      <a href="riseup.html" class="prev-case" data-i18n="casePages.animations.navPrev">← RiseUP</a>
-      <a href="index.html" class="next-case" data-i18n="casePages.animations.navNext">Назад на главную →</a>
+      <h3 class="also-title">Смотреть также</h3>
+      <ul class="also-list">
+        <li><a href="riseup.html">RiseUP</a></li>
+        <li><a href="medreach.html">MedReach</a></li>
+        <li><a href="sberq.html">SberQ</a></li>
+        <li><span class="you-are-here">AnimationsAreEasy — Вы здесь</span></li>
+      </ul>
     </div>
   </div>
 

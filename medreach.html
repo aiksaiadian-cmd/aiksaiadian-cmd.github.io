@@ -42,7 +42,7 @@
       <section id="context" class="reveal">
         <h2 data-i18n="casePages.medreach.contextTitle">Контекст</h2>
         <p data-i18n="casePages.medreach.contextBody">
-          «Врачи не проходят верификацию, сделайте что-нибудь» — ко мне пришёл менеджер с проблемой: «Пользователи бросают верификацию, нужно улучшить экран». Никаких исследований, никаких данных — только факт: многие врачи не доходят до конца. Моя задача была — разобраться и предложить решение.
+          Ко мне пришёл менеджер с проблемой: «Пользователи бросают верификацию, нужно улучшить экран». Никаких исследований, никаких данных — только факт: многие врачи не доходят до конца. Моя задача была — разобраться и предложить решение.
         </p>
       </section>
 
@@ -60,9 +60,28 @@
       <section id="process" class="reveal">
         <h2 data-i18n="casePages.medreach.processTitle">Процесс</h2>
 
+        <!-- Навигация по шагам -->
+        <div class="step-cards">
+          <a href="#step-detail-1" class="step-card">
+            <span class="step-card-num">1</span>
+            <span class="step-card-title" data-i18n="casePages.medreach.process0Title">Аудит</span>
+          </a>
+          <a href="#step-detail-2" class="step-card">
+            <span class="step-card-num">2</span>
+            <span class="step-card-title" data-i18n="casePages.medreach.process1Title">Гипотезы</span>
+          </a>
+          <a href="#step-detail-3" class="step-card">
+            <span class="step-card-num">3</span>
+            <span class="step-card-title" data-i18n="casePages.medreach.process2Title">Проектирование</span>
+          </a>
+          <a href="#step-detail-4" class="step-card">
+            <span class="step-card-num">4</span>
+            <span class="step-card-title" data-i18n="casePages.medreach.process3Title">Презентация</span>
+          </a>
+        </div>
+
         <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
+          <div class="step" id="step-detail-1">
             <div class="step-content">
               <h3 data-i18n="casePages.medreach.process0Title">Аудит</h3>
               <p data-i18n="casePages.medreach.process0Desc0">Я открыл текущий интерфейс и начал анализировать его.</p>
@@ -72,17 +91,32 @@
                 <li data-i18n="casePages.medreach.process0List0">Зачем пользователю это делать? Чтобы открыть «все возможности» — какие это возможности? Хочет ли пользователь эти возможности?</li>
                 <li data-i18n="casePages.medreach.process0List1">Почему это вызывает раздражение? Окно вылезает постоянно, мешает работать, его можно только отложить, и оно вылезет при переходе на следующую страницу снова.</li>
               </ul>
-              <p data-i18n="casePages.medreach.process0Desc3">С точки зрения когнитивных принципов здесь было нарушено всё:</p>
-              <ul>
-                <li><strong>Навязчивость</strong> вызывает раздражение — человек хочет избавиться от раздражителя, а не выполнить действие. Тут как с навязчивой рекламой: пользователь перейдет, только если случайно промажет мимо крошечного крестика.</li>
-                <li><strong>Отсутствие контекста</strong> не мотивирует на выполнение нужного нам действия: «зачем мне тратить на это мое время? Что я получу взамен?»</li>
-                <li><strong>Нет ощущения прогресса</strong> — процесс верификации выглядит как бесконечная чёрная дыра.</li>
-              </ul>
+              <div class="process-break">
+                <div class="sticky-board">
+                  <div class="sticky-col">
+                    <div class="sticky-group-label" data-i18n="casePages.medreach.boardLabel0">Навязчивость</div>
+                    <div class="sticky-note pink" style="transform: rotate(-2.5deg) translateY(2px);" data-i18n="casePages.medreach.board0">
+                      Вызывает раздражение — человек хочет избавиться от раздражителя, а не выполнить действие.
+                    </div>
+                  </div>
+                  <div class="sticky-col">
+                    <div class="sticky-group-label" data-i18n="casePages.medreach.boardLabel1">Отсутствие контекста</div>
+                    <div class="sticky-note pink" style="transform: rotate(2deg) translateY(-3px);" data-i18n="casePages.medreach.board1">
+                      Не мотивирует: «зачем мне тратить время? Что я получу взамен?»
+                    </div>
+                  </div>
+                  <div class="sticky-col">
+                    <div class="sticky-group-label" data-i18n="casePages.medreach.boardLabel2">Нет прогресса</div>
+                    <div class="sticky-note pink" style="transform: rotate(-1.5deg) translateY(5px);" data-i18n="casePages.medreach.board2">
+                      Процесс верификации выглядит как бесконечная чёрная дыра.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">2</div>
+          <div class="step" id="step-detail-2">
             <div class="step-content">
               <h3 data-i18n="casePages.medreach.process1Title">Гипотезы</h3>
               <ul>
@@ -93,8 +127,16 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">3</div>
+          <!-- Изображение: Состояния модального окна — после шага 2 -->
+          <div class="process-break">
+            <div class="visual-frame visual-medreach">
+              <div class="shot-block fullwidth">
+                <img class="shot-img" src="img/medreach-modal-states.png" alt="Состояния модального окна верификации" style="background: transparent;">
+              </div>
+            </div>
+          </div>
+
+          <div class="step" id="step-detail-3">
             <div class="step-content">
               <h3 data-i18n="casePages.medreach.process2Title">Проектирование</h3>
               <p data-i18n="casePages.medreach.process2Desc">Я набросал концепцию, основанную на базовых принципах и гипотезах:</p>
@@ -107,8 +149,7 @@
             </div>
           </div>
 
-          <div class="step">
-            <div class="step-number">4</div>
+          <div class="step" id="step-detail-4">
             <div class="step-content">
               <h3 data-i18n="casePages.medreach.process3Title">Презентация</h3>
               <p data-i18n="casePages.medreach.process3Desc">
@@ -118,6 +159,15 @@
           </div>
         </div>
       </section>
+
+      <!-- Видео: Финальный флоу -->
+      <div class="process-break">
+        <div class="visual-frame visual-medreach">
+          <div class="shot-block fullwidth">
+            <video class="shot-img" src="img/medreach-final-flow.mp4" autoplay loop muted playsinline style="background: transparent;"></video>
+          </div>
+        </div>
+      </div>
 
       <!-- Результат -->
       <section id="result" class="reveal">
@@ -140,11 +190,16 @@
     </main>
 
     <div class="case-navigation">
-      <a href="riseup.html" class="prev-case" data-i18n="casePages.medreach.navPrev">← RiseUP</a>
-      <a href="sberq.html" class="next-case" data-i18n="casePages.medreach.navNext">SberQ →</a>
+      <h3 class="also-title">Смотреть также</h3>
+      <ul class="also-list">
+        <li><a href="riseup.html">RiseUP</a></li>
+        <li><span class="you-are-here">MedReach — Вы здесь</span></li>
+        <li><a href="sberq.html">SberQ</a></li>
+        <li><a href="animations-are-easy.html">AnimationsAreEasy</a></li>
+      </ul>
     </div>
-  </div>
 
+        </div>
   <footer class="section" id="contacts">
     <div class="container" style="max-width: var(--content-width);">
       <div class="footer-divider"></div>
