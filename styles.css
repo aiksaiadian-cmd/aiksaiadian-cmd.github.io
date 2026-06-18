@@ -20,7 +20,7 @@
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --max-width: 1200px;
-  --content-width: 720px;
+  --content-width: 820px;
   --bento-gap: 16px;
   --section-gap: 100px;
   --nav-height: 64px;
@@ -636,8 +636,11 @@ p {
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .footer-links {
@@ -693,6 +696,12 @@ p {
   .gallery-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
   }
 
   .footer-links {
