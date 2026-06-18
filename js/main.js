@@ -128,6 +128,10 @@
       var key = el.getAttribute('data-i18n');
       var translation = t(key);
       if (translation !== key) {
+        translation = translation.replace(
+          /(^|\s)(в|на|с|со|о|об|по|для|без|к|ко|у|от|из|за|над|под|при|про|через|и|а|но|не|ни|бы|ли|же|б|до|те)\s/gi,
+          '$1$2\u00A0'
+        );
         el.textContent = translation;
       }
     });
@@ -169,7 +173,8 @@
     if (!nav) return;
 
     var handleScroll = function () {
-      if (window.scrollY > 100) {
+      var threshold = window.innerWidth <= 768 ? 0 : 100;
+      if (window.scrollY > threshold) {
         nav.classList.add('nav-scrolled');
       } else {
         nav.classList.remove('nav-scrolled');

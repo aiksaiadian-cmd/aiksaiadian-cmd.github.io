@@ -25,7 +25,8 @@
     var nav = document.querySelector('.nav');
     if (nav) {
       var handleScroll = function () {
-        if (window.scrollY > 100) {
+        var threshold = window.innerWidth <= 768 ? 0 : 100;
+        if (window.scrollY > threshold) {
           nav.classList.add('nav-scrolled');
         } else {
           nav.classList.remove('nav-scrolled');
